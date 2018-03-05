@@ -1,0 +1,7 @@
+#head {
+  background-image: url("../images/header.jpg");
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
