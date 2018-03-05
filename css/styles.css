@@ -1,7 +1,16 @@
 #head {
   background-image: url("../images/header.jpg");
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   background-size: cover;
   background-attachment: fixed;
+}
+.recipe-link{
+  background-image: url("../images/back1.jpg");
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-attachment: fixed;
+  height: 50vh;
+  margin-top: 5%;
 }
