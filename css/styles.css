@@ -14,6 +14,9 @@
   height: 40vh;
   margin-top: 5%;
 }
+
+
+/* section */
 .section3{
   margin-left: 30px;
 }
@@ -30,6 +33,22 @@
   margin-left: 0%;
   margin-right: 0%;
 }
+#spaceMe{
+  margin-left: 200px;
+}
+.click-menu{
+  margin-top: 2%;
+}
+#arrow{
+  margin-top: 5%;
+  margin-right: 0px;
+}
+#menu{
+  height: 15vh;
+  margin-left: 0px;
+}
+
+/* section */
 .section4{
   margin-top: 10%;
 }
