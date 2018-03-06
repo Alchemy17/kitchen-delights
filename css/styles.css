@@ -77,6 +77,8 @@
   padding-top: 50px;
 }
 
-.footSection {
-  float: right;
+#footSection .socialmedia {
+  margin: 50px;
+  word-spacing: 50px;
+  font-size: 30px;
 }
