@@ -1,6 +1,6 @@
 #head {
   background-image: url("../images/header.jpg");
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   background-size: cover;
   background-attachment: fixed;
@@ -11,6 +11,25 @@
   text-align: center;
   align-items: center;
   background-attachment: fixed;
-  height: 50vh;
+  height: 40vh;
   margin-top: 5%;
+}
+.section3{
+  margin-left: 30px;
+}
+#head2{
+  text-align: center;
+  margin-top: 5%;
+}
+#img1{
+  float: right;
+  margin-top: 0%;
+}
+#img2{
+  float: left;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.bg{
+  
 }
