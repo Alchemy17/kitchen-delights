@@ -5,7 +5,8 @@
   background-size: cover;
   background-attachment: fixed;
 }
-.recipe-link{
+
+.recipe-link {
   background-image: url("../images/back1.jpg");
   justify-content: center;
   text-align: center;
@@ -13,4 +14,45 @@
   background-attachment: fixed;
   height: 50vh;
   margin-top: 5%;
+}
+
+#nav {
+  float: right;
+  height: 100px;
+  background: transparent; // Transparent initial setting
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease .5s;
+}
+
+.nav {
+  float: right;
+}
+
+.nav a {
+  color: white;
+  font-size: 15px;
+  letter-spacing: 5px;
+}
+
+#logo {
+  float: left;
+  letter-spacing: normal;
+  color: #fff;
+  padding: 20px;
+  font-size: 18px;
+  transition: all ease .5s;
+}
+
+#nav.shrink {
+  height: 40px;
+  transition: all ease .5s;
+  background: black; // Change background to black on scroll
+}
+
+#nav.shrink #logo {
+  padding: 10px;
+  transition: all ease .5s;
 }
