@@ -4,7 +4,9 @@
   width: 100%;
   background-size: cover;
   background-attachment: fixed;
+
 }
+
 .recipe-link{
   background-image: url("../images/back1.jpg");
   justify-content: center;
@@ -14,3 +16,42 @@
   height: 50vh;
   margin-top: 5%;
 }
+
+#head2{
+  background-image: url("../images/header.jpg");
+  padding-bottom: 70vh;
+background-repeat: no-repeat;
+background-size: cover;
+height: 60vh;
+background-attachment: fixed;
+box-shadow: 0 0 8px 8px black;
+}
+
+
+#break{text-align: center;
+color: white;
+margin-top: 0%;
+text-align: left;
+font-size: 20vh;
+padding-top: 22%;
+text-decoration:overline;
+}
+
+#pic1{
+  height: 40vh;
+  box-shadow: 0 0 12px 10px #989898;
+margin-left: 4vh;
+}
+
+#pic2{
+  height: 40vh;
+  box-shadow: 0 0 12px 10px #989898;
+margin-left: 4vh;
+}
+#pic3{
+  height: 40vh;
+  box-shadow: 0 0 12px 10px #989898;
+margin-left: 4vh;
+}
+
+.row{padding-top: 15vh}
