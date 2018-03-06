@@ -77,8 +77,23 @@
   padding-top: 50px;
 }
 
+#footSection {
+  background-image: url("../images/footerbg.jpg");
+  height: 60vh;
+}
+#footerImage1{
+  float: left;
+  height: 60vh;
+  margin: 0%;
+
+}
+#footerImage2{
+  float: right;
+  height: 60vh;
+}
 #footSection .socialmedia {
-  margin: 50px;
   word-spacing: 50px;
   font-size: 30px;
+  text-align: center;
+  color: white;
 }
