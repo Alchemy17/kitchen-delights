@@ -81,16 +81,19 @@
   background-image: url("../images/footerbg.jpg");
   height: 60vh;
 }
-#footerImage1{
+
+#footerImage1 {
   float: left;
   height: 60vh;
   margin: 0%;
-
 }
-#footerImage2{
+
+#footerImage2 {
   float: right;
   height: 60vh;
+  margin-top: 0%;
 }
+
 #footSection .socialmedia {
   word-spacing: 50px;
   font-size: 30px;
@@ -98,62 +101,118 @@
   color: white;
 }
 
+.sides {
+  margin: 0%;
+  padding: 0%;
+}
 
 /* section */
-.section3{
+
+.section3 {
   margin-top: 5%;
 }
-#head2{
+
+#head2 {
   text-align: center;
 }
-#img1{
+
+#img1 {
   float: right;
   margin-top: 0%;
 }
-.container-fluid{
+
+.container-fluid {
   margin: 0%;
   margin-left: 0%;
   margin-right: 0%;
 }
-#img2{
+
+#img2 {
   float: left;
   margin-left: 0%;
   margin-right: 0%;
 }
-#spaceMe{
+
+#spaceMe {
   margin-left: 200px;
 }
-.click-menu{
+
+.click-menu {
   margin-top: 2%;
 }
-#clickMe{
+
+#clickMe {
   float: right;
   margin-right: 20px;
 }
-#arrow{
+
+#arrow {
   margin-top: 5%;
   margin-right: 0px;
 }
-#menu{
+
+#menu {
   height: 15vh;
   margin-left: 0px;
 }
 
 /* section */
-.section4{
+
+.section4 {
   margin-top: 5%;
 }
-.bg{
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/S3/section4.jpg');
+
+.bg {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/S3/section4.jpg');
   height: 40vh;
   background-attachment: fixed;
 }
-.icons{
-  margin-left: 400px;
-  margin-top: 10%;
+
+.icons {
+  margin-left: 100px;
+  margin-top: 6%;
 }
-#come{
+#chef{
+  margin-top: 0%;
+  display: inline;
+  position: relative;
+}
+#glass{
+  margin-top: 0%;
+  display: inline;
+  position: relative;
+  height: 10%;
+}
+
+#txt{
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.icon-text {
+  font-size: 20px;
+}
+
+#come {
   color: white;
   text-align: center;
   justify-content: center;
 }
+.counter-Txt span {
+  display: block;
+  font-size: 36px
+}
+@media(min-width:320px) and (max-width:767px) {
+  .c-no {
+    height: 100%;
+  }
+  .counter-Txt {
+    margin-top:10px;
+  }
+  .margin-bot-35 {
+    margin-bottom: 35px;
+  }
+}
+
+/* section trial */
