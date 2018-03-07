@@ -17,4 +17,71 @@ function search() {
   let included = "&allowedIngredient[]=" + getIncluded;
   let getExcluded = document.getElementById("excludedIngredients").value;
   let excluded = "&excludedIngredient[]=" + getExcluded;
-}
+
+  ajaxRequest.onreadystatechange = function () {
+    if (ajaxRequest.readyState == 4) {
+      if (ajaxRequest.readyState == 200) {
+
+        let jsonObj = JSON.parse(ajaxRequest.responseText);
+        // below is the div the container will be appended to
+        let getResults = document.getElementById('results');
+        // for each recipe match,increment
+        for (let i = 0; i < jsonObj.length; i++) {
+          // create parent container for each recipe
+          let container = document.getElementById("results");
+          container.setAttribute("class", "recipeContainer");
+          // create a header element to display the recipe name
+          let heading = document.createElement("h1");
+          heading.setAttribute("class", "recipeTitle");
+          // create an image element to display the image of the recipe
+          let pic = document.createElement("img");
+          // create image text node
+          let picNode = (jsonObj.matches[i].imageUrlBySize["90"]);
+
+          //create a subheading for the Ingridents
+          let ingPara = document.createElement("p");
+          ingPara.setAttribute("class", "ingPara");
+          let ingParaNode = document.createTextNode("What you need:");
+
+          //create an unordered list for Ingridents
+          let ingredientUL = document.createElement("ul");
+          ingredientUL.setAttribute("class", "ingUL");
+
+          // declaring value for each recipeid to be used  for button
+
+          let recipeID = jsonObj.matches[i].id;
+          //declare onclickURL  to construct  URL for each RECIPE with the recipeID
+          let onClickUrl = "window.open(" + "\'http://www.yummly.co/recipe/" + recipeID + "\')";
+
+
+          //append element and recipe name together
+          heading.appendChild(headingNode);
+          // append element to recipe container
+          container.appendChild(heading);
+
+          //append src set as picNode to the image element
+          pic.setAttribute("src", picNode);
+          //append image text node to recipe container
+          container.appendChild(pic);
+
+          // for each ingrident list on d page
+          for (let h = 0; i < jsonObj.matches[i].ingrident.length; h++) {
+            let ingredientLineItem = document.createElement("li");
+            //create a textnode for each ingrident
+            let ingredientLineItemNode = document.createTextNode(jsonObj.matches[i].ingredients[h]);
+            //append textnode to ingrident list item
+            ingredientLineItem.appendChild(ingredientLineItemNode);
+            // append element to unordered list
+            ingredientUL.appendChild(ingredientLineItem);
+          }
+
+
+
+
+
+        }
+      }
+
+
+    }
+  }
