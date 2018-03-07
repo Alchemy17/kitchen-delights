@@ -37,3 +37,38 @@ label {
   margin-top: 2em;
   font-size: 1.5em;
 }
+
+input, select {
+  font-size: 110%;
+}
+
+.submit {
+  width: 100%;
+}
+
+.button {
+  font-size: 125%;
+}
+
+.recipeContainer {
+  border: solid 2px #a9a9a9;
+  max-width: 60%;
+  font-size: 110%;
+  background-color: white;
+  padding: 2em;
+  margin: 2em auto 0;
+}
+
+.ingPara {
+  font-weight: bold;
+  font-size: 120%;
+  text-align: left;
+}
+
+.ingUL {
+  text-align: left;
+}
+
+.recipeTitle {
+  line-height: 150%;
+}
