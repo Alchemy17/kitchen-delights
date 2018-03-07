@@ -5,14 +5,97 @@
   background-size: cover;
   background-attachment: fixed;
 }
-.recipe-link{
-  background-image: url("../images/back1.jpg");
+
+.recipe-link {
   justify-content: center;
-  text-align: center;
-  align-items: center;
+  background-image: url("../images/back1.jpg");
   background-attachment: fixed;
-  height: 40vh;
-  margin-top: 5%;
+  height: 55vh;
+}
+
+.recipe-link h1 {
+  padding-top: 2%;
+  text-align: center;
+  color: white;
+}
+
+#nav {
+  float: right;
+  height: 100px;
+  background: transparent; // Transparent initial setting
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease .5s;
+}
+
+.nav {
+  float: right;
+}
+
+.nav a {
+  color: white;
+  font-size: 15px;
+  letter-spacing: 5px;
+}
+
+#logo {
+  float: left;
+  letter-spacing: normal;
+  color: #fff;
+  padding: 20px;
+  font-size: 18px;
+  transition: all ease .5s;
+}
+
+#nav.shrink {
+  height: 40px;
+  transition: all ease .5s;
+  background: black; // Change background to black on scroll
+}
+
+#nav.shrink #logo {
+  padding: 10px;
+  transition: all ease .5s;
+}
+
+.imgFrame {
+  float: left;
+  background: transparent;
+  padding: 15px;
+  border: 4px solid white;
+  height: 270px;
+  width: 180px;
+  margin-top: 4%;
+  margin-left: 11%;
+}
+
+.imgFrame figcaption {
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#footSection {
+  background-image: url("../images/footerbg.jpg");
+  height: 60vh;
+}
+#footerImage1{
+  float: left;
+  height: 60vh;
+  margin: 0%;
+
+}
+#footerImage2{
+  float: right;
+  height: 60vh;
+}
+#footSection .socialmedia {
+  word-spacing: 50px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
 }
 
 
