@@ -74,14 +74,36 @@ function search() {
             // append element to unordered list
             ingredientUL.appendChild(ingredientLineItem);
           }
+          //append the element to the recipe container
+          container.appendChild(ingredientUL);
+          // append the subheading
+          container.appendChild(ingParaNode);
+          //append element to recipe container
+          container.appendChild(ingPara);
+          //apend element to recipe container
+          container.appendChild(ingredientUL);
 
+          //set attribute of input element with type of button
+          button.setAttribute("type", "button");
+          button.setAttribute("value", "Get this recipe");
+          button.setAttribute("class", "getFullRecipe" + [i]);
 
-
-
-
+          //set onclick to the onClickUrl result
+          button.setAttribute("onclick", onClickUrl);
+          //append button to recipe container
+          container.appendChild(button);
+          // append container to results div/DOM
+          getResults.appendChild(container);
         }
+      } else {
+        console.log("Status error: " + ajaxRequest.status);
       }
-
-
+    } else {
+      console.log("Ignored readyState: " + ajaxRequest.readyState);
     }
   }
+
+
+
+
+}
