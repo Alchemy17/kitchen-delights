@@ -6,6 +6,11 @@
   background-attachment: fixed;
 }
 
+.intro h1, h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
 .title {
   padding-top: 300px;
 }
@@ -133,8 +138,8 @@
 
 .text .copyright {
   text-align: center;
-  margin-top: 49px;
-  margin-left: 20px;
+  margin-top: 30px;
+  margin-left: 18px;
 }
 
 .section3 {
