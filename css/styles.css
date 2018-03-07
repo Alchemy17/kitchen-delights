@@ -82,6 +82,64 @@
   height: 60vh;
 }
 
+.section3{
+  margin-top: 5%;
+}
+#head2{
+  text-align: center;
+}
+#img1{
+  float: right;
+  margin-top: 0%;
+}
+.container-fluid{
+  margin: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+#img2{
+  float: left;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+#spaceMe{
+  margin-left: 200px;
+}
+.click-menu{
+  margin-top: 2%;
+}
+#clickMe{
+  float: right;
+  margin-right: 20px;
+}
+#arrow{
+  margin-top: 5%;
+  margin-right: 0px;
+}
+#menu{
+  height: 15vh;
+  margin-left: 0px;
+}
+
+/* section */
+.section4{
+  margin-top: 5%;
+}
+.bg{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/S3/section4.jpg');
+  height: 40vh;
+  background-attachment: fixed;
+}
+.icons{
+  margin-left: 400px;
+  margin-top: 10%;
+}
+#come{
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
 #footSection p {
   color: white;
 }
