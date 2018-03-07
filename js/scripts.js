@@ -2,12 +2,17 @@ var a = 0;
 
 //User Interface
 $(document).ready(function() {
+	$('.launch-modal').on('click', function(e){
+		e.preventDefault();
+		$( '#' + $(this).data('modal-id') ).modal();
+	});
   $(window).scroll(function() {
     if ($(document).scrollTop() > 500) {
       $('#nav').addClass('shrink');
     } else {
       $('#nav').removeClass('shrink');
     }
+
 
     var oTop = $('#counter').offset().top - window.innerHeight;
     if (a == 0 && $(window).scrollTop() > oTop) {
@@ -21,7 +26,7 @@ $(document).ready(function() {
           },
 
           {
-            duration: 700000,
+            duration: 7000,
             easing: 'swing',
             step: function() {
               $this.text(Math.floor(this.countNum));
@@ -32,7 +37,7 @@ $(document).ready(function() {
             }
           });
       });
-      a = 1;
+      a = 0;
     }
 
   });
