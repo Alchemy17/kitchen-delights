@@ -1,10 +1,15 @@
+html{
+  padding: 0%;
+  width: 100%;
+}
+
 #head {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/pic/first.jpeg");
   height: 90vh;
   width: 100%;
   background-size: cover;
   background-attachment: fixed;
-
+  margin-left: 5vh;
 }
 
 .recipe-link{
@@ -18,54 +23,55 @@
 }
 
 #head2{
-  background-image: url("../images/header.jpg");
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/pic/w.jpg');
   padding-bottom: 70vh;
 background-repeat: no-repeat;
 background-size: cover;
 height: 60vh;
 background-attachment: fixed;
-  box-shadow: 0 3px 80px 10px #331a00
-;
+box-shadow: 0 0 5px 1px #331a00;
+margin-top: -5vh;
 }
 
 
 #break{text-align: center;
 color: white;
-margin-top: 0%;
+margin-bottom: -3%;
 text-align: left;
-font-size: 20vh;
-padding-top: 22%;
+font-size: 25vh;
+padding-top:14%;
 text-decoration:overline;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Berkshire Swash', cursive;
+text-align: center;
 }
 
 #pic1{
-  height: 40vh;
-  box-shadow: 0 3px 80px 10px #331a00
-;
-margin-left: 4vh;
+  height: 45vh;
+box-shadow: 3px 3px 2px 0.5px #331a00;
+;margin-left: 18vh;
 }
 
 #pic2{
-  height: 40vh;
-    box-shadow: 0 3px 80px 10px #331a00
-;
-margin-left: 4vh;
+  height: 45vh;
+box-shadow: 3px 3px 2px 0.5px #331a00;
+;margin-left:18vh;
 }
 #pic3{
-  height: 40vh;
-    box-shadow: 0 3px 80px 10px #331a00
+  height: 45vh;
+box-shadow: 3px 3px 2px 0.5px #331a00;
 ;
-margin-left: 4vh;
+margin-left: 18vh;
 }
 
-.row{padding-top: 5vh;
+.row{ margin-top: 5vh;
 background-attachment: scroll;
 padding-bottom: 5vh;}
 
 #con{
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/ff.jpeg');
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/pic/w.jpg');
       background-position:center top;
-margin-bottom: 15%;
+margin-bottom: 0%;
 font-size: 10vh;
 background-repeat: no-repeat;
 background-size: cover;
@@ -77,6 +83,7 @@ font-family: 'Yanone Kaffeesatz', sans-serif;
 font-family: 'Berkshire Swash', cursive;
 text-decoration: overline;
 color:white;
+
 }
 
 #breakfast figcaption{
@@ -86,5 +93,6 @@ color:white;
   font-family: 'Satisfy', cursive;
   margin-top: 2vh;
 text-decoration:overline;
+margin-left: 9vh;
 }
 body{background-color: 	 #ffffff;}
