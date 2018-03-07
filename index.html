@@ -12,8 +12,55 @@
 
   <body>
 
+    <div id="optionsContainer" class="options">
+      <header>
+        <h1>Recipe Matcher</h1>
+        <p class="directions">Select options to filter your search</p>
+      </header>
+      <div class="container" id="courseContainer">
+        <label for="selectStyle">Course:</label>
+        <select id="courseDD">
+            <option>Appetizers</option>
+            <option>Breakfast and Brunch</option>
+            <option>Lunch</option>
+            <option>Main Dishes</option>
+            <option>Breads</option>
+            <option>Salads</option>
+            <option>Soups</option>
+            <option>Side Dishes</option>
+            <option>Snacks</option>
+            <option>Desserts</option>
+            <option>Condiments and Sauces</option>
+            <option>Beverages</option>
+            <option>Cocktails</option>
+        </select>
+      </div>
+
+      <div id="incIngContainer" class="container">
+        <label for="includedIngridents">include these ingridents</label>
+        <input type="text" id="includedIngridents" placeholder="Included Ingridents">
+      </div>
+
+      <div id="exIngContainer" class="container">
+        <label for="excludedIngredients">Do not include these ingredient(s): </label>
+        <input type="text" id="excludedIngredients" placeholder="Excluded ingredients">
+      </div>
+
+      <div id="searchContainer">
+        <div id="searchContainer" class="container">
+          <label for="search">Search other keywords here: </label>
+          <input type="text" id="search" placeholder="Other keywords">
+        </div>
 
 
+        <div class="button container" name="submit">
+          <input type="button" class="submit button" id="submit" value="Get my recipes">
+        </div>
+      </div>
+    </div>
+    <div id="results">
+
+    </div>
 
 
 
