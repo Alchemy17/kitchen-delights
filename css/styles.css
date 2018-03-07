@@ -81,19 +81,25 @@
   background-image: url("../images/footerbg.jpg");
   height: 60vh;
 }
-#footerImage1{
+
+#footSection p {
+  color: white;
+}
+
+#footerImage1 {
   float: left;
   height: 60vh;
-  margin: 0%;
-
+  margin-left: : 0%;
 }
-#footerImage2{
+
+#footerImage2 {
   float: right;
   height: 60vh;
+  margin: 12%;;
 }
+
 #footSection .socialmedia {
-  word-spacing: 50px;
+  word-spacing: 40px;
   font-size: 30px;
-  text-align: center;
   color: white;
 }
