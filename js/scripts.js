@@ -1,15 +1,15 @@
-"use strict"; //function to ensure best practices of writing js
+"use strict";
 
-// wrtite a function to make the api call
 function search() {
-  // storing parameters in a variable to make the code more readable
+
   let ajaxRequest = new XMLHttpRequest();
   let url = 'https://api.yummly.com/v1/api/recipes';
-  // apiId and key required for authorization to use the apiId
+  //appID and appKey are necessary for each data request
   let appID = "?_app_id=8111787e";
   let appKey = "&_app_key=58a4cb8c8d357ca5e16dbaaa5ac83e33";
 
-  // the following variables will help filter  the search results so we can get the desired effect
+  //the following variables select the value of the search parameters, and construct search parameters for the GET URL.
+
   let allowedCourse = "&allowedCourse[]=course^course-" + document.getElementById("courseDD").value;
   let getKeywords = document.getElementById("search").value;
   let keywords = "&q=" + getKeywords;
@@ -18,72 +18,94 @@ function search() {
   let getExcluded = document.getElementById("excludedIngredients").value;
   let excluded = "&excludedIngredient[]=" + getExcluded;
 
+
   ajaxRequest.onreadystatechange = function () {
+    // console.log(ajaxRequest.readyState);
     if (ajaxRequest.readyState == 4) {
-      if (ajaxRequest.readyState == 200) {
+      if (ajaxRequest.status == 200) {
 
         let jsonObj = JSON.parse(ajaxRequest.responseText);
-        // below is the div the container will be appended to
-        let getResults = document.getElementById('results');
-        // for each recipe match,increment
-        for (let i = 0; i < jsonObj.length; i++) {
-          // create parent container for each recipe
-          let container = document.getElementById("results");
+        //this is the element the container will eventually be appended to
+        let getResults = document.getElementById("results");
+        ///for each recipe match, while the index is less than number of matches, increment by one
+        for (let i = 0; i < jsonObj.matches.length; i++) {
+          // create a parent container for each recipe
+          let container = document.createElement("div");
           container.setAttribute("class", "recipeContainer");
-          // create a header element to display the recipe name
+
+          // create an h1 element
           let heading = document.createElement("h1");
           heading.setAttribute("class", "recipeTitle");
-          // create an image element to display the image of the recipe
+          // create recipename text node
+          let headingNode = document.createTextNode(jsonObj.matches[i].recipeName);
+
+          // create an image element
           let pic = document.createElement("img");
           // create image text node
-          let picNode = (jsonObj.matches[i].imageUrlBySize["90"]);
+          let picNode = (jsonObj.matches[i].imageUrlsBySize["90"]);
 
-          //create a subheading for the Ingridents
+          // set src attribute of imagenode as an absolute url
+
+          //creating a subheading for the ingredient list and setting it's class
           let ingPara = document.createElement("p");
           ingPara.setAttribute("class", "ingPara");
           let ingParaNode = document.createTextNode("What you need:");
 
-          //create an unordered list for Ingridents
+          //  create an unordered list for ingredients
           let ingredientUL = document.createElement("ul");
           ingredientUL.setAttribute("class", "ingUL");
+          //declaring an empty variable to be used to compile list items
 
-          // declaring value for each recipeid to be used  for button
+          let ingredientLineItem = "";
+          let ingredientLineItemNode = "";
+
+          //create an input element
+          let button = document.createElement("input");
+
+
+
+          //declaring value for reach recipeid to be used for button
 
           let recipeID = jsonObj.matches[i].id;
-          //declare onclickURL  to construct  URL for each RECIPE with the recipeID
+          //declare onclickURL to construct URL for each recipe with the recipeID
           let onClickUrl = "window.open(" + "\'http://www.yummly.co/recipe/" + recipeID + "\')";
 
 
-          //append element and recipe name together
+
+          // append element and recipe name together
           heading.appendChild(headingNode);
           // append element to recipe container
           container.appendChild(heading);
 
           //append src set as picNode to the image element
           pic.setAttribute("src", picNode);
-          //append image text node to recipe container
+          // append image text node to recipe container
           container.appendChild(pic);
 
-          // for each ingrident list on d page
-          for (let h = 0; i < jsonObj.matches[i].ingrident.length; h++) {
+          //  for each ingredient
+          for (let h = 0; h < jsonObj.matches[i].ingredients.length; h++) {
+            //  		create a new list item
             let ingredientLineItem = document.createElement("li");
-            //create a textnode for each ingrident
+            //      create textnode for each ingredient
             let ingredientLineItemNode = document.createTextNode(jsonObj.matches[i].ingredients[h]);
-            //append textnode to ingrident list item
+            //     append textnode to ingredient list item element
             ingredientLineItem.appendChild(ingredientLineItemNode);
-            // append element to unordered list
+            // 	 	append element to unordered list
             ingredientUL.appendChild(ingredientLineItem);
           }
-          //append the element to the recipe container
+
+          // append element to recipe container
           container.appendChild(ingredientUL);
-          // append the subheading
-          container.appendChild(ingParaNode);
-          //append element to recipe container
+          // console.log(ingredientUL);
+
+          //apend subheading ingredient list text to paragraph element
+          ingPara.appendChild(ingParaNode);
+          //append ingredient subheading to recipe container
           container.appendChild(ingPara);
-          //apend element to recipe container
+          // append element to recipe container
           container.appendChild(ingredientUL);
 
-          //set attribute of input element with type of button
+          //set attribute of input element with type of button, value of 'Get this recipe', and class.
           button.setAttribute("type", "button");
           button.setAttribute("value", "Get this recipe");
           button.setAttribute("class", "getFullRecipe" + [i]);
@@ -92,6 +114,7 @@ function search() {
           button.setAttribute("onclick", onClickUrl);
           //append button to recipe container
           container.appendChild(button);
+
           // append container to results div/DOM
           getResults.appendChild(container);
         }
@@ -106,4 +129,47 @@ function search() {
 
 
 
+  //this function ultimately builds the appropiate URL for the AJAX request using only the fields the user has selected. Starts with empty strings, and checks if there is a value from the user.  If there is an input value, the category precursor will be compiled with the input value and added to the URL.  If there is no input value, an empty string is added to the URL.
+
+  function ajaxFunc() {
+
+
+    let includedUrlString = "";
+    let excludedUrlString = "";
+    let keywordsUrlString = "";
+
+    if (getIncluded !== "") {
+      includedUrlString = included;
+    }
+
+    if (getExcluded !== "") {
+      excludedUrlString = excluded;
+    }
+
+    console.log(getKeywords);
+
+    if (getKeywords !== "") {
+      keywordsUrlString = keywords;
+    }
+
+    let urlString = url + appID + appKey + keywordsUrlString + allowedCourse + includedUrlString + excludedUrlString;
+
+    console.log(urlString);
+
+    return ajaxRequest.open("GET", urlString, true);
+
+  }
+  ajaxFunc();
+  ajaxRequest.send();
 }
+$(document).ready(function () {
+  $('#submit').on('click', function (e) {
+    e.preventDefault();
+    $('#result').innerHTML = "";
+    // $("#result").empty();
+    search();
+  });
+});
+
+
+// document.getElementById('submit').addEventListener('click', search);
