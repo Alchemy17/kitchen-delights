@@ -2,6 +2,9 @@ var a = 0;
 
 //User Interface
 $(document).ready(function() {
+	AOS.init({
+		duration: 3000,
+	});
 	$('.launch-modal').on('click', function(e){
 		e.preventDefault();
 		$( '#' + $(this).data('modal-id') ).modal();
