@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 /* main header */
-=======
-/*header section styling*/
-
->>>>>>> faf41e56b0c9efb154f7e1c373885c4dfdbc0a03
 #head {
   background-image: url("../images/header.jpg");
   height: 98vh;
@@ -11,23 +6,6 @@
   background-size: cover;
   background-attachment: fixed;
 }
-<<<<<<< HEAD
-/* end main header */
-/* zigzag */
-#head:after {
-    background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
-    background-position: bottom;
-    background-repeat: repeat-x;
-    background-size: 32px 32px;
-    content: " ";
-    display: block;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 40px;
-
-=======
 
 #head:after {
   background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
@@ -42,7 +20,6 @@
   width: 100%;
   height: 32px;
 }
->>>>>>> faf41e56b0c9efb154f7e1c373885c4dfdbc0a03
 
 #head h1 {
   text-align: center;
@@ -131,13 +108,6 @@
 }
 
 .recipe-link img {
-<<<<<<< HEAD
-
-
-}
-
-.recipe-link h1 {
-=======
   padding-top: 0%;
   margin-top: 5%;
 }
@@ -145,7 +115,6 @@
 .recipe-link h1 {
   padding-top: 2px;
   ;
->>>>>>> faf41e56b0c9efb154f7e1c373885c4dfdbc0a03
   text-align: center;
   color: white;
   padding: 0px;
@@ -473,7 +442,6 @@ label {
   ;
   margin-left: 18vh;
 }
-<<<<<<< HEAD
 
 .row {
   margin-top: 5vh;
@@ -498,32 +466,6 @@ label {
   color: white;
 }
 
-=======
-
-.row {
-  margin-top: 5vh;
-  background-attachment: scroll;
-  padding-bottom: 5vh;
-}
-
-#con11 {
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/new.jpeg');
-  background-position: center top;
-  margin-bottom: 0%;
-  font-size: 10vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  box-shadow: 0 3px 80px 10px #331a00;
-  background-attachment: fixed;
-  text-align: left;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-family: 'Berkshire Swash', cursive;
-  text-decoration: overline;
-  color: white;
-}
-
->>>>>>> faf41e56b0c9efb154f7e1c373885c4dfdbc0a03
 #breakfast figcaption {
   text-align: center;
   font-size: 3vh;
@@ -704,7 +646,6 @@ body {
   text-align: left;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-family: 'Berkshire Swash', cursive;
-<<<<<<< HEAD
   text-decoration: overline;
   color: white;
   margin-left: -2.8%;
@@ -712,15 +653,6 @@ body {
 
 .footer-dinner {
   text-decoration: overline;
-=======
-  text-decoration: overline;
-  color: white;
-  margin-left: -2.8%;
-}
-
-.footer-dinner {
-  text-decoration: overline;
->>>>>>> faf41e56b0c9efb154f7e1c373885c4dfdbc0a03
   text-align: center;
   font-size: 10vh;
   height: 8vh;
@@ -867,50 +799,3 @@ body {
 }
 
 /* dinner section ends here */
-<<<<<<< HEAD
-
-/* plans */
-
-.plans{
-  padding-top: 5%;
-  padding-bottom: 5%;
-  background-color: #f5f5f5;
-  padding-left: 400px;
-}
-#plans{
-  padding-top: 5%;
-  background-color: #f5f5f5;
-  color: #191970;
-  font-size: 100px;
-}
-.box-shaped {
-  background-color: white;
-  border-radius: 10% /30px;
-  box-shadow: 0 0 5px black;
-  width: 300px;
-  height: 600px;
-  margin-left: 40px;
-  text-align: center;
-}
-.planhead{
-  padding-top: 20%;
-  padding-bottom: 10%;
-  color: black;
-}
-strong{
-  color: #191970;
-  font-size: 40px;
-  padding-bottom: 40%;
-}
-#png{
-  float: left;
-  height: 90px;
-  margin-bottom: 0px;
-}
-.btn-plan{
-  margin-top: 60px;
-  margin-left: -50px;
-
-}
-=======
->>>>>>> faf41e56b0c9efb154f7e1c373885c4dfdbc0a03
