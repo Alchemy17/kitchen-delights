@@ -126,8 +126,8 @@
   margin: 0%;
   padding: 0%;
 }
-
 /* section4 */
+
 
 .section3 {
   margin-top: 5%;
@@ -179,9 +179,6 @@
 
 /* section4 */
 
-.section4 {
-  margin-top: 5%;
-}
 
 .bg {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/S3/section4.jpg');
