@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 /*header section styling*/
 
 #head {
@@ -367,3 +368,395 @@ label {
 .recipeTitle {
   line-height: 150%;
 }
+=======
+/* breakfast section starts here */
+#head-breakfast{
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/new.jpeg');
+  padding-bottom: 70vh;
+background-repeat: no-repeat;
+background-size: cover;
+height: 60vh;
+background-attachment: fixed;
+box-shadow: 0 0 5px 1px #331a00;
+margin-top: -5vh;
+}
+
+
+#break1{text-align: center;
+color: white;
+margin-bottom: -3%;
+text-align: left;
+font-size: 25vh;
+padding-top:14%;
+text-decoration:overline;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Berkshire Swash', cursive;
+text-align: center;
+}
+
+/* pancakes */
+#pic1{
+  height: 45vh;
+box-shadow: 3px 3px 2px 0.5px #331a00;
+;margin-left: 18vh;
+}
+
+#pic21{
+  height: 45vh;
+box-shadow: 3px 3px 2px 0.5px #331a00;
+;margin-left:18vh;
+}
+#pic31{
+  height: 45vh;
+box-shadow: 3px 3px 2px 0.5px #331a00;
+;
+margin-left: 18vh;
+}
+
+.row{ margin-top: 5vh;
+background-attachment: scroll;
+padding-bottom: 5vh;}
+
+#con11{
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/new.jpeg');
+      background-position:center top;
+margin-bottom: 0%;
+font-size: 10vh;
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+  box-shadow: 0 3px 80px 10px #331a00;
+background-attachment:fixed;
+text-align:left;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Berkshire Swash', cursive;
+text-decoration: overline;
+color:white;
+
+}
+
+#breakfast figcaption{
+  text-align: center;
+  font-size: 3vh;
+  font-family: 'Patua One', cursive;
+  font-family: 'Satisfy', cursive;
+  margin-top: 2vh;
+text-decoration:overline;
+margin-left: 9vh;
+}
+body{background-color: 	 #ffffff;}
+
+#con11{
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/new.jpeg');
+      background-position:center top;
+margin-bottom: 0%;
+font-size: 10vh;
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+  box-shadow: 0 3px 80px 10px #331a00;
+background-attachment:fixed;
+text-align:left;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Berkshire Swash', cursive;
+text-decoration: overline;
+color:white;
+margin-left:0;
+}
+
+
+#con21{
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/new.jpeg');
+      background-position:center top;
+margin-bottom: 0%;
+font-size: 10vh;
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+  box-shadow: 0 3px 80px 10px #331a00;
+background-attachment:fixed;
+text-align:left;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Berkshire Swash', cursive;
+text-decoration: overline;
+color:white;
+margin-left:-2.8%;
+}
+.footer-dinner1{
+  text-decoration: underline;
+text-align: center;
+font-size: 10vh;
+  height: 8vh;
+  margin-left: -6vh;
+  font-family: 'Patua One', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Lobster Two', cursive;
+font-family: 'Tangerine', cursive;
+padding-top: 3vh;
+}
+
+/* breakfast section ends here */
+
+
+
+/* lunch section starts here  */
+
+
+#head-lunch{
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/pic/w.jpg');
+  padding-bottom: 70vh;
+background-repeat: no-repeat;
+background-size: cover;
+height: 60vh;
+background-attachment: fixed;
+box-shadow: 0 0 5px 1px #331a00;
+margin-top: -5vh;
+}
+
+
+#break{text-align: center;
+color: white;
+margin-bottom: -3%;
+text-align: left;
+font-size: 25vh;
+padding-top:14%;
+text-decoration:overline;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Berkshire Swash', cursive;
+text-align: center;
+}
+
+#pic1{
+  height: 45vh;
+box-shadow: 3px 3px 2px 0.5px #331a00;
+;margin-left: 18vh;
+}
+
+#pic2{
+  height: 45vh;
+box-shadow: 3px 3px 2px 0.5px #331a00;
+;margin-left:18vh;
+}
+#pic3{
+  height: 45vh;
+box-shadow: 3px 3px 2px 0.5px #331a00;
+;
+margin-left: 18vh;
+}
+
+.row{ margin-top: 5vh;
+background-attachment: scroll;
+padding-bottom: 5vh;}
+
+#con{
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/pic/w.jpg');
+      background-position:center top;
+margin-bottom: 0%;
+font-size: 10vh;
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+  box-shadow: 0 3px 80px 10px #331a00;
+background-attachment:fixed;
+text-align:left;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Berkshire Swash', cursive;
+text-decoration: overline;
+color:white;
+
+}
+
+#breakfast figcaption{
+  text-align: center;
+  font-size: 3vh;
+  font-family: 'Patua One', cursive;
+  font-family: 'Satisfy', cursive;
+  margin-top: 2vh;
+text-decoration:overline;
+margin-left: 9vh;
+}
+body{background-color: 	 #ffffff;}
+
+#con1{
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/pic/w.jpg');
+      background-position:center top;
+margin-bottom: 0%;
+font-size: 10vh;
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+  box-shadow: 0 3px 80px 10px #331a00;
+background-attachment:fixed;
+text-align:left;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Berkshire Swash', cursive;
+text-decoration: overline;
+color:white;
+margin-left:-2.8%;
+}
+
+
+#con2{
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/pic/w.jpg');
+      background-position:center top;
+margin-bottom: 0%;
+font-size: 10vh;
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+  box-shadow: 0 3px 80px 10px #331a00;
+background-attachment:fixed;
+text-align:left;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Berkshire Swash', cursive;
+text-decoration: overline;
+color:white;
+margin-left:-2.8%;
+}
+.footer-dinner{
+  text-decoration: overline;
+text-align: center;
+font-size: 10vh;
+  height: 8vh;
+  margin-left: -6vh;
+  font-family: 'Patua One', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Lobster Two', cursive;
+font-family: 'Tangerine', cursive;
+padding-top: 3vh;
+}
+
+/* lunch section ends here */
+
+
+
+
+
+/* dinner starts here */
+
+#head-dinner{
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/pic/ho.jpg");
+  padding-bottom: 70vh;
+background-repeat: no-repeat;
+background-size: cover;
+height: 60vh;
+background-attachment: fixed;
+box-shadow: 0 0 5px 1px #331a00;
+margin-top: -5vh;
+}
+
+
+#break{text-align: center;
+color: white;
+margin-bottom: -3%;
+text-align: left;
+font-size: 25vh;
+padding-top:14%;
+text-decoration:overline;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Berkshire Swash', cursive;
+text-align: center;
+}
+
+#pic1{
+  height: 45vh;
+box-shadow: 3px 3px 2px 0.5px #331a00;
+;margin-left: 18vh;
+}
+
+#pic2{
+  height: 45vh;
+box-shadow: 3px 3px 2px 0.5px #331a00;
+;margin-left:18vh;
+}
+#pic3{
+  height: 45vh;
+box-shadow: 3px 3px 2px 0.5px #331a00;
+;
+margin-left: 18vh;
+}
+
+.row{ margin-top: 5vh;
+background-attachment: scroll;
+padding-bottom: 5vh;}
+
+#con{
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/pic/ho.jpg');
+      background-position:center top;
+margin-bottom: 0%;
+font-size: 10vh;
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+  box-shadow: 0 3px 30px 10px #331a00;
+background-attachment:fixed;
+text-align:left;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Berkshire Swash', cursive;
+text-decoration: overline;
+color:white;
+
+}
+
+#breakfast figcaption{
+  text-align: center;
+  font-size: 3vh;
+  font-family: 'Patua One', cursive;
+  font-family: 'Satisfy', cursive;
+  margin-top: 2vh;
+text-decoration:overline;
+margin-left: 9vh;
+}
+body{background-color: 	 #ffffff;}
+
+#coni{
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/pic/ho.jpg');
+background-position:center top;
+margin-top: 3%;
+font-size: 10vh;
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+box-shadow: 0 3px 30px 10px #331a00;
+background-attachment:fixed;
+text-align:left;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Berkshire Swash', cursive;
+text-decoration: overline;
+color:white;
+}
+
+#cont{
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/pic/ho.jpg');
+background-position:center top;
+margin-top: 3%;
+font-size: 10vh;
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+box-shadow: 0 3px 30px 10px #331a00;
+background-attachment:fixed;
+text-align:left;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Berkshire Swash', cursive;
+text-decoration: overline;
+color:white;
+margin-left: -2.5%;
+}
+
+.footer-dinner{
+  text-decoration:underline;
+text-align: center;
+font-size: 10vh;
+  height: 8vh;
+  margin-left: -6vh;
+  font-family: 'Patua One', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Lobster Two', cursive;
+font-family: 'Tangerine', cursive;
+
+padding-top: 3vh;
+}
+
+/* dinner section ends here */
+>>>>>>> a7353d94eecd3c891972de175aa7df1c5667c666
