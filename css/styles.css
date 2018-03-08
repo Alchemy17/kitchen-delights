@@ -1,18 +1,11 @@
+/*header section styling*/
+
 #head {
   background-image: url("../images/header.jpg");
   height: 90vh;
   width: 100%;
   background-size: cover;
   background-attachment: fixed;
-}
-
-.intro h1, h2 {
-  text-align: center;
-  font-weight: bold;
-}
-
-.title {
-  padding-top: 300px;
 }
 
 #head h1 {
@@ -24,6 +17,19 @@
   text-align: center;
   color: white;
 }
+
+.title {
+  padding-top: 300px;
+}
+
+/*intro section styling*/
+
+.intro h1, h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+/*menu section styling*/
 
 .recipe-link {
   justify-content: center;
@@ -37,6 +43,8 @@
   text-align: center;
   color: white;
 }
+
+/*navigation bar styling*/
 
 #nav {
   float: right;
@@ -79,6 +87,8 @@
   transition: all ease .5s;
 }
 
+/*Styling of frames used in the menu section*/
+
 .imgFrame {
   float: left;
   background: transparent;
@@ -95,6 +105,8 @@
   text-align: center;
   padding-top: 50px;
 }
+
+/*Footer section styling*/
 
 #footSection {
   background-image: url("../images/footerbg.jpg");
@@ -148,6 +160,8 @@
   margin-left: 18px;
 }
 
+/*Section 3 styling*/
+
 .section3 {
   margin-top: 5%;
 }
@@ -197,7 +211,7 @@
   margin-left: 0px;
 }
 
-/* section */
+/* section 4 styling*/
 
 .section4 {
   margin-top: 5%;
