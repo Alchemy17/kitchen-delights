@@ -136,6 +136,9 @@
 #head2 {
   text-align: center;
 }
+#divider{
+  width: 400px;
+}
 
 #img1 {
   float: right;
