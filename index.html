@@ -2,10 +2,12 @@
 <html>
 
 <head>
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.min.css" rel="stylesheet" style="text/css">
+  <link href="css/styles.css" rel="stylesheet" style="text/css">
+  <link rel="shortcut icon" href="images/icon.ico" />
   <link rel="stylesheet" href="css/form-elements.css">
+  <link rel="stylesheet" type="text/css" href="https://www.google.com/fonts">
+  <link href="css/aos.css" rel="stylesheet">
   <meta charset="utf-8">
   <title>Kitchen Delights</title>
 </head>
@@ -41,29 +43,34 @@
       </div>
     </nav>
   </header>
-
-  <section id="about-us" class="section3" class="container-fluid intro">
+  <section class="section3" class="container-fluid intro">
     <img id="img1" src="images/S3/side.jpg" class="img-responsive" alt="side image">
     <div class="container">
       <div class="row">
-        <h1>Introduction</h1>
-        <h2 id="head2"> Welcome To Kitchen Delights</h2>
-        <h2>Our Services</h2>
-        <p>Kitchen Delights takes pride in making the most tantalizing, mouth-watering foods from all over the world using different recipes gathered by us on this application. Our skilled and most sort after chefs have over 10 years curlinary experience
-          in world famous hotel restaurants like Hotel Intercontinental and The Mariot Hotel.</p>
-        <h2> Why Kitchen Delights?</h2>
-        <p>We have taken up the load of making things way easier for you, the busy person. Anything on the recipes that interests you and would like to sample it but you just don't have the time? Worry not! We've got you.</p>
-        <h3>What to do?</h3>
-        <ol>
-          <li>Scroll through our menu or search through the various recipes we have on our platform.</li>
-          <li>Identify that meal (or meals, we don't judge ;-)) that stir up your cravings.</li>
-          <li>Place your order through the channel below.</li>
-          <li>Leave your contact and location details.</li>
-          <li>Your meal shall be delivered as soon as it is ready by our trusted team of efficient delivery personel.</li>
-          <li>Payment is made on delivery by either cash-on-hand or via MPESA (Tel.No: +254700001122)</li>
-        </ol>
-        <p>Like what we do? Spread the word about ius to friends and family, won't you?</p>
+        <div style="text-align: centre;">
+          <h1 data-aos="fade-left">Introduction</h1>
+          <img data-aos="fade-right" src="images/divider.png" alt="divider" id="divider">
+          <h2>Our Services</h2>
+          <p>Kitchen Delights takes pride in making the most tantalizing, mouth-watering foods from all over the world using different recipes gathered by us on this application. Our skilled and most sort after chefs have over 10 years curlinary experience
+            in world famous hotel restaurants like Hotel Intercontinental and The Mariot Hotel.</p>
+        </div>
+        <div data-aos="zoom-in-right">
+
+          <h2> Why Kitchen Delights?</h2>
+          <p>We have taken up the load of making things way easier for you, the busy person. Anything on the recipes that interests you and would like to sample it but you just don't have the time? Worry not! We've got you.</p>
+          <h3>What to do?</h3>
+          <ol>
+            <li>Scroll through our menu or search through the various recipes we have on our platform.</li>
+            <li>Identify that meal (or meals, we don't judge ;-)) that stir up your cravings.</li>
+            <li>Place your order through the channel below.</li>
+            <li>Leave your contact and location details.</li>
+            <li>Your meal shall be delivered as soon as it is ready by our trusted team of efficient delivery personel.</li>
+            <li>Payment is made on delivery by either cash-on-hand or via MPESA (Tel.No: +254700001122)</li>
+          </ol>
+          <p>Like what we do? Spread the word about ius to friends and family, won't you?</p>
+        </div>
       </div>
+    </div>
     </div>
     <img id="img2" src="images/S3/side1.jpg" class="img-responsive" alt="side image">
     <div class="container">
@@ -85,60 +92,117 @@
   <section id="menu-link">
     <div class="recipe-link">
       <h1><hr style="width: 200px;">MENU<hr style="width: 200px;"></h1>
-      <div class="imgFrame">
-        <a href="b.html" target="_blank"><img src="images/breakfast.png" alt="Breakfast Link">
-        <figcaption>Breakfast</figcaption></a>
+      <div class="imgFrame" data-aos="flip-left">
+        <img src="images/breakfast.png" alt="Breakfast Link">
+        <figcaption>Breakfast</figcaption>
       </div>
-      <div class="imgFrame">
-        <a href="lunch.html" target="_blank"><img src="images/lunch.png" alt="Lunch Link">
-        <figcaption>Lunch</figcaption></a>
+      <div class="imgFrame" data-aos="flip-right">
+        <img src="images/lunch.png" alt="Lunch Link">
+        <figcaption>Lunch</figcaption>
       </div>
-      <div class="imgFrame">
-        <a href="dinner.html" target="_blank"><img src="images/dinner.png" alt="Dinner Link">
-        <figcaption>Dinner</figcaption></a>
+      <div class="imgFrame" data-aos="flip-up">
+        <img src="images/snack.png" alt="Snacks Link">
+        <figcaption>Snacks</figcaption>
+      </div>
+      <div class="imgFrame" data-aos="flip-down">
+        <img src="images/dinner.png" alt="Dinner Link">
+        <figcaption>Dinner</figcaption>
       </div>
     </div>
   </section>
 
-<!-- MODAL -->
-<div class="modal fade" id="modal-register"  role="dialog" aria-labelledby="modal-register-label" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">
+
+
+  <!-- trial  section -->
+  <!-- MODAL -->
+  <div class="modal fade" id="modal-register" role="dialog" aria-labelledby="modal-register-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
           <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
         </button>
-        <h3 class="modal-title" id="modal-register-label">Order</h3>
-        <p>Fill in the form below to order food:</p>
-      </div>
-      <div class="modal-body">
+          <h3 class="modal-title" id="modal-register-label">Order</h3>
+          <p>Fill in the form below to order food:</p>
+        </div>
+        <div class="modal-body">
 
-              <form role="form" action="" method="post" class="registration-form">
-                <div class="form-group">
-                  <label class="sr-only" for="form-first-name">First name</label>
-                    <input type="text" name="form-first-name" placeholder="Your name..." class="form-first-name form-control" id="form-first-name">
-                  </div>
-                  <div class="form-group">
-                    <label class="sr-only" for="form-email">Email</label>
-                    <input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-last-name">
-                  </div>
-                  <div class="form-group">
-                    <label class="sr-only" for="form-address">Your Address</label>
-                    <input type="text" name="form-address" placeholder="Address..." class="form-address form-control" id="form-email">
-                  </div>
-                  <div class="form-group">
-                    <label class="sr-only" for="form-about-yourself">Any Additional Information</label>
-                    <textarea name="form-about-yourself" placeholder="Info..."
-                          class="form-about-yourself form-control" id="form-about-yourself"></textarea>
-                  </div>
-                  <button type="submit" class="btn">Hook me up! I'm feeling hungry bruh!</button>
-              </form>
+          <form role="form" action="" method="post" class="registration-form">
+            <div class="form-group">
+              <label class="sr-only" for="form-first-name">First name</label>
+              <input type="text" name="form-first-name" placeholder="Your name..." class="form-first-name form-control" id="form-first-name">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="form-email">Email</label>
+              <input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-last-name">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="form-address">Your Address</label>
+              <input type="text" name="form-address" placeholder="Address..." class="form-address form-control" id="form-email">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="form-about-yourself">Any Additional Information</label>
+              <textarea name="form-about-yourself" placeholder="Info..." class="form-about-yourself form-control" id="form-about-yourself"></textarea>
+            </div>
+            <button type="submit" class="btn">Hook me up! I'm feeling hungry bruh!</button>
+          </form>
+
+        </div>
 
       </div>
+    </div>
+  </div>
+
+  <!-- plans -->
+
+
+  <div id="plans" class="row">
+    <h2>Welcome To The Special Kitchen Delights Plans</h2>
+  </div>
+  <div class="plans">
+    <div class="row container-fluid">
+      <div class="col-md-4 box-shaped" data-aos="fade-down-left">
+        <h2 class="planhead"> BASIC PLAN </h2>
+        <strong>$10/</strong><span>month</span><br><br>
+        <p>This is the breakfast monthly delivery plan</p><br>
+        <h5>Breakfast</h5>
+        <p>English Breakfast</p>
+        <p>Oats</p>
+        <p>Pancakes</p>
+        <img src="images/s4/spag.png" id="png" class="img-responsive" alt="foamy beer">
+        <a class="btn btn-link-1 btn-plan launch-modal" href="#" data-modal-id="modal-register"> Order Now</a>
+
+      </div>
+      <div class="col-md-4 box-shaped" data-aos="zoom-in-up">
+        <h2 class="planhead"> PREMIUM PLAN </h2>
+
+        <strong>$20/</strong><span>month</span><br><br>
+        <p>This is the breakfast + lunch monthly delivery plan</p><br>
+        <h5>Pizza</h5>
+        <p>Cheese and Bacon Burger</p>
+        <p>Salad</p>
+        <img src="images/s4/foamy.png" id="png" class="img-responsive" alt="foamy beer">
+        <a class="btn btn-link-1 btn-plan launch-modal" href="#" data-modal-id="modal-register"> Order Now</a>
+      </div>
+      <div class="col-md-4 box-shaped" data-aos="fade-down-left">
+        <h2 class="planhead"> ULTIMATE PLAN </h2>
+        <strong>$30/</strong><span>month</span><br><br>
+        <p>This is the breakfast + lunch + dinner monthly delivery plan</p><br>
+        <h5>Chrispy Chicken</h5>
+        <p>Mexican Tacco</p>
+        <p>Smoked Salmon</p>
+        <img src="images/s4/cake.png" id="png" class="img-responsive" alt="foamy beer">
+        <a class="btn btn-link-1 btn-plan launch-modal" href="#" data-modal-id="modal-register"> Order Now</a>
+      </div>
+
 
     </div>
   </div>
-</div>
+
+  </div>
+
+  <!-- end plans -->
+
 
   <!-- section 4 over here -->
   <section class="section4">
@@ -146,8 +210,8 @@
       <div class="row icons" id="counter">
         <div class="col-md-3 icon-text">
           <img src="images/s4/glass.png" id="glass" alt="food" class="img-responsive">
-           <div class="counter-Txt"> <span class="counter-value" data-count="100">125</span> Hundred</div>
-           <p id="txt">Daily Customers</p>
+          <div class="counter-Txt"> <span class="counter-value" data-count="100">125</span> Hundred</div>
+          <p id="txt">Daily Customers</p>
         </div>
         <div class="col-md-3 icon-text">
           <img src="images/s4/food.png" id="chef" alt="glass of water" class="img-responsive">
@@ -171,10 +235,7 @@
 
 
   </section>
-  <!-- modal section -->
 
-
-  <!-- end modal section -->
 
   <!-- section 5 -->
   <section class="section5">
@@ -228,12 +289,11 @@
       </div>
     </div>
   </footer>
-  <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-  <!-- Bootstrap core JavaScript -->
+  <script src="js/aos.js" type="text/javascript"></script>
   <script type="text/javascript" src="js/bootstrap.min1.js"></script>
   <script type="text/javascript" src="js/jquery.backstretch.js"></script>
+  <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
-
 </body>
 
 </html>

@@ -7,80 +7,8 @@
   background-attachment: fixed;
 }
 
-#head:after {
-  background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
-  background-position: left-bottom;
-  background-repeat: repeat-x;
-  background-size: 32px 32px;
-  content: " ";
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  height: 32px;
-}
-
-#head h1 {
-  text-align: center;
-  color: white;
-}
-
-#head h2 {
-  text-align: center;
-  color: white;
-}
-
-.title {
-  padding-top: 300px;
-}
-
-/*intro section styling*/
-
-.intro h1, h2 {
-  text-align: center;
-  font-weight: bold;
-}
-
-/*Section 3 styling*/
-
-.section3 {
-  margin-top: 5%;
-}
-
-#head2 {
-  text-align: center;
-}
-
-#img1 {
-  float: right;
-  margin-right: 0%;
-  padding-right: 0%;
-}
-
-.container-fluid {
-  padding: 0%;
-  margin: 0%;
-  margin-left: 0%;
-  margin-right: 0%;
-
-
 }
 /* end zigzag */
-
-#img2 {
-  float: left;
-  margin-left: 0%;
-  margin-right: 0%;
-}
-
-#spaceMe {
-  margin-left: 200px;
-}
-
-.click-menu {
-  margin-top: 2%;
-}
 
 #clickMe {
   float: right;
@@ -227,6 +155,16 @@
 }
 
 #head2 {
+  text-align: center;
+}
+#divider{
+  width: 400px;
+}
+
+#img1 {
+  float: right;
+  margin-top: 0%;
+}
 
   text-align: center;
   margin-top: 100px;
@@ -255,7 +193,6 @@
 
 
 /* section 4 styling*/
-=======
 /* section4 */
 
 
@@ -316,6 +253,7 @@
     margin-bottom: 35px;
   }
 }
+
 
 .recipe-body {
   line-height: 150%;

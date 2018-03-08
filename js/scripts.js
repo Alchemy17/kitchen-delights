@@ -1,24 +1,18 @@
-
 var a = 0;
 
 //User Interface
 $(document).ready(function() {
-<<<<<<< HEAD
-	$('#submit').on('click', function (e) {
+
+  $('#submit').on('click', function(e) {
     e.preventDefault();
     $('#result').innerHTML = "";
     // $("#result").empty();
     search();
   });
-=======
-	AOS.init({
-		duration: 3000,
-	});
->>>>>>> 85248f844f67cfaea8979008f63dfa5d220612cd
-	$('.launch-modal').on('click', function(e){
-		e.preventDefault();
-		$( '#' + $(this).data('modal-id') ).modal();
-	});
+  $('.launch-modal').on('click', function(e) {
+    e.preventDefault();
+    $('#' + $(this).data('modal-id')).modal();
+  });
   $(window).scroll(function() {
     if ($(document).scrollTop() > 500) {
       $('#nav').addClass('shrink');
@@ -76,7 +70,7 @@ function search() {
   let excluded = "&excludedIngredient[]=" + getExcluded;
 
 
-  ajaxRequest.onreadystatechange = function () {
+  ajaxRequest.onreadystatechange = function() {
     // console.log(ajaxRequest.readyState);
     if (ajaxRequest.readyState == 4) {
       if (ajaxRequest.status == 200) {
