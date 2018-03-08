@@ -99,6 +99,7 @@
 #footSection {
   background-image: url("../images/footerbg.jpg");
   height: 70vh;
+  align-items: center;
 }
 
 #footSection p {
@@ -133,6 +134,11 @@
 }
 
 .text h3 {
+  color: white;
+  text-align: center;
+}
+
+.text li {
   color: white;
 }
 
