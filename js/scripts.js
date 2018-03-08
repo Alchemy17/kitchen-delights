@@ -3,12 +3,18 @@ var a = 0;
 
 //User Interface
 $(document).ready(function() {
+<<<<<<< HEAD
 	$('#submit').on('click', function (e) {
     e.preventDefault();
     $('#result').innerHTML = "";
     // $("#result").empty();
     search();
   });
+=======
+	AOS.init({
+		duration: 3000,
+	});
+>>>>>>> 85248f844f67cfaea8979008f63dfa5d220612cd
 	$('.launch-modal').on('click', function(e){
 		e.preventDefault();
 		$( '#' + $(this).data('modal-id') ).modal();
