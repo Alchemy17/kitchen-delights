@@ -2,7 +2,10 @@ var a = 0;
 
 //User Interface
 $(document).ready(function() {
-
+  console.log("hooo");
+AOS.init ({
+  duration: 3000,
+});
   $('#submit').on('click', function(e) {
     e.preventDefault();
     $('#result').innerHTML = "";
