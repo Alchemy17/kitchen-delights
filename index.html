@@ -1,245 +1,288 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/form-elements.css">
-  <meta charset="utf-8">
-  <title>Kitchen Delights</title>
-</head>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" style="text/css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="css/styles.css" rel="stylesheet" style="text/css">
+    <link rel="shortcut icon" href="images/icon.ico" />
+    <link rel="stylesheet" href="css/form-elements.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://www.google.com/fonts"> -->
+    <link href="css/aos.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Kitchen Recipe Delight</title>
+  </head>
 
-<body>
-  <header id="head">
-    <div class="container title">
-      <h1>Benvenuto...</h1>
-      <h2>Kitchen Delights</h2>
-    </div>
-    <nav class="navbar navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+  <body>
+    <header id="head">
+      <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+          </div>
+          <div id="nav">
+            <a id="logo" href="#">Kitchen Delights</a>
+            <ul class="nav navbar-nav">
+              <li><a href="#head">HOME</a></li>
+              <li><a href="#menu-link">MENU</a></li>
+              <li><a href="recipe.html">RECIPE</a></li>
+              <li><a href="#divider">ABOUT</a></li>
+              <li><a href="#footSection">CONTACT US</a></li>
+            </ul>
+          </div>
         </div>
-        <div id="nav">
+      </nav>
+      <h1> KITCHEN DELIGHTS </h1>
+    </header>
+    <section class="section3" class="container-fluid intro">
+      <img id="img1" src="images/S3/side.jpg" class="img-responsive" alt="side image">
+      <div class="container">
+        <div class="row">
+          <div class="txtt">
+            <h1 data-aos="fade-left" id="plans1">Introduction</h1>
+            <img data-aos="fade-right" src="images/divider.png" alt="divider" id="divider">
+            <h2>Our Services</h2>
+            <p>Kitchen Delights takes pride in making the most tantalizing, mouth-watering foods from all over the world using different recipes gathered by us on this application. Our skilled and most sort after chefs have over 10 years curlinary experience
+              in world famous hotel restaurants like Hotel Intercontinental and The Mariot Hotel.</p>
+          </div>
+          <div data-aos="zoom-in-right">
 
-          <a id="logo" href="#"><img src="" alt="Web Logo"></a>
-          <ul class="nav navbar-nav">
-            <li><a href="#head">HOME</a></li>
-            <li><a href="#menu-link">MENU</a></li>
-            <li><a href="#footSection">CONTACT US</a></li>
-          </ul>
+            <h2> Why Kitchen Delights?</h2>
+            <p>We have taken up the load of making things way easier for you, the busy person. Anything on the recipes that interests you and would like to sample it but you just don't have the time? Worry not! We've got you.</p>
+            <h3>What to do?</h3>
+            <ol>
+              <li>Scroll through our menu or search through the various recipes we have on our platform.</li>
+              <li>Identify that meal (or meals, we don't judge ;-)) that stir up your cravings.</li>
+              <li>Place your order through the channel below.</li>
+              <li>Leave your contact and location details.</li>
+              <li>Your meal shall be delivered as soon as it is ready by our trusted team of efficient delivery personel.</li>
+              <li>Payment is made on delivery by either cash-on-hand or via MPESA (Tel.No: +254700001122)</li>
+            </ol>
+            <p>Like what we do? Spread the word about ius to friends and family, won't you?</p>
+          </div>
         </div>
       </div>
-    </nav>
-  </header>
+      </div>
+      <img id="img2" src="images/S3/side1.jpg" class="img-responsive" alt="side image">
+      <div class="container">
+        <br>
+        <div class="click-menu row">
+          <div class="col-md-5">
+            <h2 id="clickMe">Click on one of our<br><span id="clickMe">Menus</span></h2>
+          </div>
+          <div class="col-md-2">
+            <img id="arrow" src="images/S3/arrow.png" alt="the arrow">
+          </div>
+          <div class="col-md-5">
+            <a href="#menu-link"> <img id="menu" src="images/S3/menu.png" alt="the arrow"></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section class="section3" class="container-fluid intro">
-    <img id="img1" src="images/S3/side.jpg" class="img-responsive" alt="side image">
-    <div class="container">
-      <div class="row">
-        <h1>Introduction</h1>
-        <h2 id="head2"> Welcome To Kitchen Delights</h2>
-        <h2>Our Services</h2>
-        <p>Kitchen Delights takes pride in making the most tantalizing, mouth-watering foods from all over the world using different recipes gathered by us on this application. Our skilled and most sort after chefs have over 10 years curlinary experience
-          in world famous hotel restaurants like Hotel Intercontinental and The Mariot Hotel.</p>
-        <h2> Why Kitchen Delights?</h2>
-        <p>We have taken up the load of making things way easier for you, the busy person. Anything on the recipes that interests you and would like to sample it but you just don't have the time? Worry not! We've got you.</p>
-        <h3>What to do?</h3>
-        <ol>
-          <li>Scroll through our menu or search through the various recipes we have on our platform.</li>
-          <li>Identify that meal (or meals, we don't judge ;-)) that stir up your cravings.</li>
-          <li>Place your order through the channel below.</li>
-          <li>Leave your contact and location details.</li>
-          <li>Your meal shall be delivered as soon as it is ready by our trusted team of efficient delivery personel.</li>
-          <li>Payment is made on delivery by either cash-on-hand or via MPESA (Tel.No: +254700001122)</li>
-        </ol>
-        <p>Like what we do? Spread the word about ius to friends and family, won't you?</p>
+    <section id="menu-link">
+      <div class="recipe-link">
+        <div class="row">
+        <h1><hr style="width: 200px;">MENU<hr style="width: 200px;"></h1>
+      </div>
+      <div id="imgs">
+        <a href="b.html" target="_blank">
+        <div class="imgFrame" data-aos="flip-left">
+          <img src="images/breakfast.png" alt="Breakfast Link">
+          <figcaption>Breakfast</figcaption>
+        </div>
+      </a>
+      <a href="lunch.html" target="_blank">
+        <div class="imgFrame" data-aos="flip-right">
+          <img src="images/lunch.png" alt="Lunch Link">
+          <figcaption>Lunch</figcaption>
+        </div>
+      </a>
+        <a href="dinner.html" target="_blank">
+        <div class="imgFrame" data-aos="flip-down">
+          <img src="images/dinner.png" alt="Dinner Link">
+          <figcaption>Dinner</figcaption>
+        </div>
+      </a>
       </div>
     </div>
-    <img id="img2" src="images/S3/side1.jpg" class="img-responsive" alt="side image">
-    <div class="container">
-      <br>
-      <div class="click-menu row">
-        <div class="col-md-5">
-          <h2 id="clickMe">Click on one of our<br><span id="clickMe">Menus</span></h2>
-        </div>
-        <div class="col-md-2">
-          <img id="arrow" src="images/S3/arrow.png" alt="the arrow">
-        </div>
-        <div class="col-md-5">
-          <a href="#menu-link"> <img id="menu" src="images/S3/menu.png" alt="the arrow"></a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="menu-link">
-    <div class="recipe-link">
-      <h1><hr style="width: 200px;">MENU<hr style="width: 200px;"></h1>
-      <div class="imgFrame">
-        <img src="images/breakfast.png" alt="Breakfast Link">
-        <figcaption>Breakfast</figcaption>
-      </div>
-      <div class="imgFrame">
-        <img src="images/lunch.png" alt="Lunch Link">
-        <figcaption>Lunch</figcaption>
-      </div>
-      <div class="imgFrame">
-        <img src="images/snack.png" alt="Snacks Link">
-        <figcaption>Snacks</figcaption>
-      </div>
-      <div class="imgFrame">
-        <img src="images/dinner.png" alt="Dinner Link">
-        <figcaption>Dinner</figcaption>
-      </div>
-    </div>
-  </section>
 
-<!-- trial  section -->
-    <div class="container">
-        <div class="top-big-link">
-          <a class="btn btn-link-1 launch-modal" href="#" data-modal-id="modal-register"> Order Now</a>
-        </div>
-    </div>
-<!-- MODAL -->
-<div class="modal fade" id="modal-register"  role="dialog" aria-labelledby="modal-register-label" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">
+
+    <!-- trial  section -->
+    <!-- MODAL -->
+    <div class="modal fade" id="modal-register" role="dialog" aria-labelledby="modal-register-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
           <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
         </button>
-        <h3 class="modal-title" id="modal-register-label">Order</h3>
-        <p>Fill in the form below to order food:</p>
-      </div>
-      <div class="modal-body">
+            <h3 class="modal-title" id="modal-register-label">Order</h3>
+            <p>Fill in the form below to order food:</p>
+          </div>
+          <div class="modal-body">
 
-              <form role="form" action="" method="post" class="registration-form">
-                <div class="form-group">
-                  <label class="sr-only" for="form-first-name">First name</label>
-                    <input type="text" name="form-first-name" placeholder="Your name..." class="form-first-name form-control" id="form-first-name">
-                  </div>
-                  <div class="form-group">
-                    <label class="sr-only" for="form-email">Email</label>
-                    <input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-last-name">
-                  </div>
-                  <div class="form-group">
-                    <label class="sr-only" for="form-address">Your Address</label>
-                    <input type="text" name="form-address" placeholder="Address..." class="form-address form-control" id="form-email">
-                  </div>
-                  <div class="form-group">
-                    <label class="sr-only" for="form-about-yourself">Any Additional Information</label>
-                    <textarea name="form-about-yourself" placeholder="Info..."
-                          class="form-about-yourself form-control" id="form-about-yourself"></textarea>
-                  </div>
-                  <button type="submit" class="btn">Hook me up! I'm feeling hungry bruh!</button>
-              </form>
+            <form role="form" action="" method="post" class="registration-form">
+              <div class="form-group">
+                <label class="sr-only" for="form-first-name">First name</label>
+                <input type="text" name="form-first-name" placeholder="Your name..." class="form-first-name form-control" id="form-first-name">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="form-email">Email</label>
+                <input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-last-name">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="form-address">Your Address</label>
+                <input type="text" name="form-address" placeholder="Address..." class="form-address form-control" id="form-email">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="form-about-yourself">Any Additional Information</label>
+                <textarea name="form-about-yourself" placeholder="Info..." class="form-about-yourself form-control" id="form-about-yourself"></textarea>
+              </div>
+              <button type="submit" class="btn">Hook me up! I'm feeling hungry bruh!</button>
+            </form>
 
-      </div>
+          </div>
 
-    </div>
-  </div>
-</div>
-
-  <!-- section 4 over here -->
-  <section class="section4">
-    <div class="bg container-fluid" id="come">
-      <div class="row icons" id="counter">
-        <div class="col-md-3 icon-text">
-          <img src="images/s4/glass.png" id="glass" alt="food" class="img-responsive">
-           <div class="counter-Txt"> <span class="counter-value" data-count="100">125</span> Hundred</div>
-           <p id="txt">Daily Customers</p>
-        </div>
-        <div class="col-md-3 icon-text">
-          <img src="images/s4/food.png" id="chef" alt="glass of water" class="img-responsive">
-          <div class="counter-Txt"> <span class="counter-value" data-count="200">100</span>Awesome</div>
-          <p id="txt">Available Dishes</p>
-        </div>
-        <div class="col-md-3 icon-text">
-          <img src="images/s4/chef.png" id="chef" alt="chef" class="img-responsive">
-          <div class="counter-Txt"> <span class="counter-value" data-count="230">200</span>Genius</div>
-          <p id="txt">Chefs</p>
-        </div>
-        <div class="col-md-3 icon-text">
-          <img src="images/s4/tea.png" id="chef" alt="chef" class="img-responsive">
-          <div class="counter-Txt"> <span class="counter-value" data-count="140">4</span> Million</div>
-          <p id="txt">People Mentioning Us!</p>
         </div>
       </div>
     </div>
-  </section>
-  <!-- end of section 4 -->
+
+    <!-- plans -->
 
 
-  </section>
-  <!-- modal section -->
+    <div id="plans" class="row txtt">
+      <h2>Welcome To The Special Kitchen Delights Plans</h2>
+    </div>
+    <div class="plans">
+      <div class="row container-fluid">
+        <div class="col-md-4 box-shaped" data-aos="fade-down-left">
+          <h2 class="planhead"> BASIC PLAN </h2>
+          <strong>$10/</strong><span>month</span><br><br>
+          <p>This is the breakfast monthly delivery plan</p><br>
+          <h5>Breakfast</h5>
+          <p>English Breakfast</p>
+          <p>Oats</p>
+          <p>Pancakes</p>
+          <img src="images/s4/spag.png" id="png" class="img-responsive" alt="foamy beer">
+          <a class="btn btn-link-1 btn-plan launch-modal" href="#" data-modal-id="modal-register"> Order Now</a>
+        </div>
+        <div class="col-md-4 box-shaped" data-aos="zoom-in-up">
+          <h2 class="planhead"> PREMIUM PLAN </h2>
+
+          <strong>$20/</strong><span>month</span><br><br>
+          <p>This is the breakfast + lunch monthly delivery plan</p><br>
+          <h5>Pizza</h5>
+          <p>Cheese and Bacon Burger</p>
+          <p>Salad</p>
+          <img src="images/s4/foamy.png" id="png" class="img-responsive" alt="foamy beer">
+          <a class="btn btn-link-1 btn-plan launch-modal" href="#" data-modal-id="modal-register"> Order Now</a>
+        </div>
+        <div class="col-md-4 box-shaped" data-aos="fade-down-left">
+          <h2 class="planhead"> ULTIMATE PLAN </h2>
+          <strong>$30/</strong><span>month</span><br><br>
+          <p>This is the breakfast + lunch + dinner monthly delivery plan</p><br>
+          <h5>Chrispy Chicken</h5>
+          <p>Mexican Tacco</p>
+          <p>Smoked Salmon</p>
+          <img src="images/s4/cake.png" id="png" class="img-responsive" alt="foamy beer">
+          <a class="btn btn-link-1 btn-plan launch-modal" href="#" data-modal-id="modal-register"> Order Now</a>
+        </div>
 
 
-  <!-- end modal section -->
-
-  <!-- section 5 -->
-  <section class="section5">
-
-  </section>
-
-  <footer id="footSection">
-    <div class="container-fluid sides">
-      <div class="side1">
-        <img src="images/bgside1.png" id="footerImage1" alt="Left Side image" class="img-responsive">
       </div>
-      <div class="side2">
-        <img src="images/bgside2.png" id="footerImage2" alt="Right Side image" class="img-responsive">
-      </div>
-      <div class="container text">
-        <div class="row">
-          <div class="col-md-4">
-            <h3>LATEST NEWS</h3>
-            <ul>
-              <li>2 kitchen Delights Chefs awarded</li>
-              <li>Kitchen delights nominated for best food recipe and ordering site.</li>
-            </ul>
-            >
+    </div>
+
+    </div>
+
+    <!-- end plans -->
+
+
+    <!-- section 4 over here -->
+    <section class="section4">
+      <div class="bg container-fluid" id="come">
+        <div class="row icons" id="counter">
+          <div class="col-md-3 icon-text">
+            <img src="images/s4/glass.png" id="glass" alt="food" class="img-responsive">
+            <div class="counter-Txt"> <span class="counter-value" data-count="100">125</span> Hundred</div>
+            <p id="txt">Daily Customers</p>
           </div>
-          <div class="col-md-4">
-            <h3>OPERATING HOURS</h3>
-            <p>MONDAY-FRIDAY: 8am-4pm</p>
-            <p>CLOSED ON WEEKENDS AND HOLIDAYS</p>
+          <div class="col-md-3 icon-text">
+            <img src="images/s4/food.png" id="chef" alt="glass of water" class="img-responsive">
+            <div class="counter-Txt"> <span class="counter-value" data-count="200">100</span>Awesome</div>
+            <p id="txt">Available Dishes</p>
           </div>
-          <div class="col-md-4">
-            <h3>OFFICE DIRECTION</h3>
-            <a href="https://www.google.co.ke/maps/@-1.3005807,36.7846291,21z" target="_blank">
-            <img src="images/googlemap.png" alt="Gooogle maps" img-responsive></a>
+          <div class="col-md-3 icon-text">
+            <img src="images/s4/chef.png" id="chef" alt="chef" class="img-responsive">
+            <div class="counter-Txt"> <span class="counter-value" data-count="230">200</span>Genius</div>
+            <p id="txt">Chefs</p>
+          </div>
+          <div class="col-md-3 icon-text">
+            <img src="images/s4/tea.png" id="chef" alt="chef" class="img-responsive">
+            <div class="counter-Txt"> <span class="counter-value" data-count="140">4</span> Million</div>
+            <p id="txt">People Mentioning Us!</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="socialmedia">
-              <a href="https://www.facebook.com/" target="_blank"><i id="facebook" class="ion-social-facebook"></i></a>
-              <a href="https://www.instagram.com/" target="_blank"><i id="instagram" class="ion-social-instagram-outline"></i></a>
-              <a href="https://twitter.com/" target="_blank"><i id="twitter" class="ion-social-twitter-outline"></i></a>
-              <a href="https://www.pinterest.com/" target="_blank"><i id="pinterest" class="ion-social-pinterest-outline"></i></a>
+      </div>
+    </section>
+    <!-- end of section 4 -->
+
+    <footer id="footSection">
+        <div class="container-fluid sides">
+          <div class="side1">
+            <img src="images/bgside1.png" id="footerImage1" alt="Left Side image" class="img-responsive">
+          </div>
+          <div class="side2">
+            <img src="images/bgside2.png" id="footerImage2" alt="Right Side image" class="img-responsive">
+          </div>
+          <div class="container-fluid text">
+            <div class="row">
+              <div class="col-md-4">
+                <h3>LATEST NEWS</h3><br><br>
+                  <h4>2 kitchen Delights Chefs awarded</h4><br>
+                  <h4>Kitchen delights nominated for best food recipe and ordering site.</h4>
+              </div>
+              <div class="col-md-4">
+                <h3>OPERATING HOURS</h3><br><br>
+                <h4>MONDAY-FRIDAY: 8am-4pm</h4><br>
+                <h4>CLOSED ON WEEKENDS AND HOLIDAYS</h4>
+              </div>
+              <div class="col-md-4">
+                <h3>OFFICE DIRECTION</h3>
+                <br><br>  <a href="https://www.google.co.ke/maps/@-1.3005807,36.7846291,21z" target="_blank">
+                  <img id="googlemap"  src="images/googlemap.png" class="img-responsive" target="-_blank">
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="socialmedia">
+                  <a href="https://www.facebook.com/" target="_blank"><i id="facebook" class="ion-social-facebook"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank"><i id="instagram" class="ion-social-instagram-outline"></i></a>
+                  <a href="https://twitter.com/" target="_blank"><i id="twitter" class="ion-social-twitter-outline"></i></a>
+                  <a href="https://www.pinterest.com/" target="_blank"><i id="pinterest" class="ion-social-pinterest-outline"></i></a>
+                </div>
+              </div>
+            </div>
+              <div class="copyright">
+                <p>&#9400; 2018 All RightS Reserved by #mpft8-teamFood. Designed by Team</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12 copyright">
-            <p>&#9400; 2018 All RightS Reserved by #mpft8-teamFood. Designed by team Kitchen Delights</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min1.js"></script>
-  <script type="text/javascript" src="js/jquery.backstretch.js"></script>
-  <script src="js/scripts.js"></script>
-
-</body>
+      </footer>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/aos.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.backstretch.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 
 </html>

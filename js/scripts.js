@@ -1,19 +1,20 @@
-
 var a = 0;
 
 //User Interface
-$(document).ready(function() {
-	$('#submit').on('click', function (e) {
+$(document).ready(function () {
+
+
+  $('#submit').on('click', function (e) {
     e.preventDefault();
     $('#result').innerHTML = "";
     // $("#result").empty();
     search();
   });
-	$('.launch-modal').on('click', function(e){
-		e.preventDefault();
-		$( '#' + $(this).data('modal-id') ).modal();
-	});
-  $(window).scroll(function() {
+  $('.launch-modal').on('click', function (e) {
+    e.preventDefault();
+    $('#' + $(this).data('modal-id')).modal();
+  });
+  $(window).scroll(function () {
     if ($(document).scrollTop() > 500) {
       $('#nav').addClass('shrink');
     } else {
@@ -23,7 +24,7 @@ $(document).ready(function() {
 
     var oTop = $('#counter').offset().top - window.innerHeight;
     if (a == 0 && $(window).scrollTop() > oTop) {
-      $('.counter-value').each(function() {
+      $('.counter-value').each(function () {
         var $this = $(this),
           countTo = $this.attr('data-count');
         $({
@@ -35,10 +36,10 @@ $(document).ready(function() {
           {
             duration: 7000,
             easing: 'swing',
-            step: function() {
+            step: function () {
               $this.text(Math.floor(this.countNum));
             },
-            complete: function() {
+            complete: function () {
               $this.text(this.countNum);
               //alert('finished');
             }
@@ -213,5 +214,11 @@ function search() {
   ajaxFunc();
   ajaxRequest.send();
 }
+$(document).ready(function(){
 
+AOS.init({
+  duration: 3000,
+});
+
+});
 // document.getElementById('submit').addEventListener('click', search); 58f1ac0a7d6f455efe35096e717ac804cf13ad33

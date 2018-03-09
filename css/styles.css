@@ -1,16 +1,32 @@
-/*header section styling*/
+/* main header */
 
 #head {
-  background-image: url("../images/header.jpg");
-  height: 100vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/header.jpg');
+  height: 97vh;
+  margin-top: -20px;
   width: 100%;
   background-size: cover;
   background-attachment: fixed;
 }
 
+#head h1{
+  align-items: center;
+  text-align: center;
+  text-decoration: overline;
+  color: white;
+  padding-top: 400px;
+  font-size: 80px;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 20px;
+}
+
+/* end main header */
+
+/* zigzag */
+
 #head:after {
   background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
-  background-position: left-bottom;
+  background-position: bottom;
   background-repeat: repeat-x;
   background-size: 32px 32px;
   content: " ";
@@ -19,31 +35,148 @@
   bottom: 0px;
   left: 0px;
   width: 100%;
-  height: 32px;
+  height: 40px;
+}
+#reci{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/header.jpg');
+  color: white;
+  height: 50vh;
+  background-size: cover;
+}
+#reci{
+  align-items: center;
+  text-align: center;
+  text-decoration: overline;
+  color: white;
+  padding-top: 200px;
+  font-size: 100px;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 20px;
 }
 
-#head h1 {
+/* end zigzag */
+
+.recipe-link {
+  justify-content: center;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/S3/bg1.jpg');
+  background-attachment: fixed;
+  height: 55vh;
+}
+#imgs {
+  justify-content: center;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/S3/bg1.jpg');
+  background-attachment: fixed;
+  height: 55vh;
+  padding-left: 300px;
+}
+.recipe-link img {
+  padding-top: 0%;
+  margin-top: 5%;
+}
+
+.recipe-link h1 {
+  padding-top: 2px;
+  ;
   text-align: center;
   color: white;
 }
 
-#head h2 {
-  text-align: center;
+figcaption{
+  font-size: 18px;
+}
+
+#nav {
+  float: right;
+  height: 100px;
+  background: transparent; // Transparent initial setting
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease .5s;
+}
+
+.nav {
+  float: right;
+}
+
+.nav a {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
   color: white;
 }
 
-.title {
-  padding-top: 300px;
+#logo {
+  float: left;
+  letter-spacing: normal;
+  color: #fff;
+  padding: 20px;
+  font-size: 18px;
+  transition: all ease .5s;
 }
 
-/*intro section styling*/
+#nav.shrink {
+  height: 40px;
+  transition: all ease .5s;
+  background: black; // Change background to black on scroll
+}
 
-.intro h1, h2 {
+#nav.shrink #logo {
+  padding: 10px;
+  transition: all ease .5s;
+}
+
+.imgFrame {
+  float: left;
+  background: transparent;
+  padding: 15px;
+  border: 4px solid white;
+  height: 270px;
+  width: 180px;
+  margin-top: 4%;
+  margin-left: 11%;
+}
+
+.imgFrame figcaption {
+  color: white;
   text-align: center;
-  font-weight: bold;
+  padding-top: 50px;
 }
 
-/*Section 3 styling*/
+#footSection {
+  background-image: url("../images/footerbg.jpg");
+  height: 60vh;
+}
+
+#footerImage1 {
+  float: left;
+  height: 60vh;
+  margin: 0%;
+}
+
+#footerImage2 {
+  float: right;
+  height: 60vh;
+  margin-top: 0%;
+}
+
+#footSection .socialmedia {
+  word-spacing: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+.socialmedia a{
+  color: white;
+
+}
+
+.sides {
+  margin: 0%;
+  padding: 0%;
+}
+
+/* section4 */
 
 .section3 {
   margin-top: 5%;
@@ -53,14 +186,20 @@
   text-align: center;
 }
 
+#divider {
+  width: 400px;
+}
+
 #img1 {
   float: right;
-  margin-right: 0%;
-  padding-right: 0%;
+  margin-top: 0%;
+}
+
+.txtt {
+  text-align: center;
 }
 
 .container-fluid {
-  padding: 0%;
   margin: 0%;
   margin-left: 0%;
   margin-right: 0%;
@@ -95,95 +234,130 @@
   margin-left: 0px;
 }
 
-/*menu section styling*/
+/* section4 */
 
-.recipe-link {
-  justify-content: center;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/S3/bg1.jpg');
+.bg {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/S3/section4.jpg');
+  height: 40vh;
   background-attachment: fixed;
-  height: 55vh;
 }
 
-.recipe-link img {
-  padding-top: 0%;
-  margin-top: 5%;
+.icons {
+  margin-left: 100px;
+  margin-top: 6%;
 }
 
-.recipe-link h1 {
-  padding-top: 2px;
-  ;
-  text-align: center;
+#chef {
+  margin-top: 0%;
+  display: inline;
+  position: relative;
+}
+
+#glass {
+  margin-top: 0%;
+  display: inline;
+  position: relative;
+  height: 10%;
+}
+
+#txt {
   color: white;
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 10px;
 }
 
-/*navigation bar styling*/
+.icon-text {
+  font-size: 20px;
+}
 
-#nav {
-  float: right;
-  height: 100px;
-  background: transparent; // Transparent initial setting
+#come {
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+.counter-Txt span {
   display: block;
-  position: fixed;
-  width: 100%;
-  z-index: 99999;
-  transition: all ease .5s;
+  font-size: 36px
 }
 
-.nav {
-  float: right;
+@media(min-width:320px) and (max-width:767px) {
+  .c-no {
+    height: 100%;
+  }
+  .counter-Txt {
+    margin-top: 10px;
+  }
+  .margin-bot-35 {
+    margin-bottom: 35px;
+  }
 }
 
-.nav a {
-  color: white;
-  font-size: 15px;
-  letter-spacing: 5px;
+/* plans */
+
+.plans {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #f5f5f5;
+  padding-left: 400px;
 }
 
-#logo {
-  float: left;
-  letter-spacing: normal;
-  color: #fff;
-  padding: 20px;
-  font-size: 18px;
-  transition: all ease .5s;
+#plans{
+  padding-top: 5%;
+  background-color: #f5f5f5;
+  color: #191970;
+  font-size: 100px;
+}
+#plans1{
+  padding-top: 5%;
+  color: #191970;
+  font-size: 80px;
 }
 
-#nav.shrink {
-  height: 40px;
-  transition: all ease .5s;
-  background: black; // Change background to black on scroll
-}
-
-#nav.shrink #logo {
-  padding: 10px;
-  transition: all ease .5s;
-}
-
-/*Styling of frames used in the menu section*/
-
-.imgFrame {
-  float: left;
-  background: transparent;
-  padding: 15px;
-  border: 4px solid white;
-  height: 270px;
-  width: 180px;
-  margin-top: 4%;
-  margin-left: 11%;
-}
-
-.imgFrame figcaption {
-  color: white;
+.box-shaped {
+  background-color: white;
+  border-radius: 10% /30px;
+  box-shadow: 0 0 5px black;
+  width: 300px;
+  height: 600px;
+  margin-left: 40px;
   text-align: center;
-  padding-top: 50px;
 }
 
-/*Footer section styling*/
+.planhead {
+  padding-top: 20%;
+  padding-bottom: 10%;
+  color: black;
+}
+
+strong {
+  color: #191970;
+  font-size: 40px;
+  padding-bottom: 40%;
+}
+
+#png {
+  float: left;
+  height: 90px;
+  margin-bottom: 0px;
+}
+
+.btn-plan {
+  margin-top: 60px;
+  margin-left: -50px;
+}
 
 #footSection {
   background-image: url("../images/footerbg.jpg");
   height: 70vh;
   align-items: center;
+}
+#footSection1 {
+  background-image: url("../images/footerbg.jpg");
+  height: 70vh;
+  align-items: center;
+  margin-left: -100px;
 }
 
 #footSection p {
@@ -208,7 +382,6 @@
   font-size: 30px;
   color: white;
   text-align: center;
-  margin-top: 100px;
 }
 
 .text {
@@ -217,9 +390,14 @@
   margin-top: 120px;
 }
 
-.text h3 {
+.text h3{
   color: white;
-  text-align: center;
+  margin-left: 40px;
+  color:  skyblue;
+}
+.text h4{
+  color: white;
+  margin-left: 30px;
 }
 
 .text li {
@@ -228,15 +406,14 @@
 
 .text .copyright {
   text-align: center;
-  margin-top: 30px;
   margin-left: 18px;
 }
 
+/*Footer section styling*/
+
 /* section 4 styling*/
 
-.section4 {
-  margin-top: 5%;
-}
+
 
 .bg {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/S3/section4.jpg');
@@ -377,7 +554,7 @@ label {
 /* breakfast section starts here */
 
 #head-breakfast {
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/new.jpeg');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/new.jpeg');
   padding-bottom: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -392,7 +569,7 @@ label {
   color: white;
   margin-bottom: -3%;
   text-align: left;
-  font-size: 25vh;
+  font-size: 100px;;
   padding-top: 14%;
   text-decoration: overline;
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -404,22 +581,17 @@ label {
 
 #pic1 {
   height: 45vh;
-  box-shadow: 3px 3px 2px 0.5px #331a00;
-  margin-left: 18vh;
+
 }
 
 #pic21 {
   height: 45vh;
-  box-shadow: 3px 3px 2px 0.5px #331a00;
-  ;
-  margin-left: 18vh;
+
 }
 
 #pic31 {
   height: 45vh;
-  box-shadow: 3px 3px 2px 0.5px #331a00;
-  ;
-  margin-left: 18vh;
+
 }
 
 .row {
@@ -428,22 +600,6 @@ label {
   padding-bottom: 5vh;
 }
 
-#con11 {
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/new.jpeg');
-  background-position: center top;
-  margin-bottom: 0%;
-  font-size: 10vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  box-shadow: 0 3px 80px 10px #331a00;
-  background-attachment: fixed;
-  text-align: left;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-family: 'Berkshire Swash', cursive;
-  text-decoration: overline;
-  color: white;
-}
 
 #breakfast figcaption {
   text-align: center;
@@ -462,12 +618,13 @@ body {
 #con11 {
   background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/new.jpeg');
   background-position: center top;
+  display: flex;
+  height: 20vh;
   margin-bottom: 0%;
-  font-size: 10vh;
+  font-size: 80px;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  box-shadow: 0 3px 80px 10px #331a00;
   background-attachment: fixed;
   text-align: left;
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -492,7 +649,6 @@ body {
   font-family: 'Berkshire Swash', cursive;
   text-decoration: overline;
   color: white;
-  margin-left: -2.8%;
 }
 
 .footer-dinner1 {
@@ -507,7 +663,10 @@ body {
   font-family: 'Tangerine', cursive;
   padding-top: 3vh;
 }
-
+.arranged{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
 /* breakfast section ends here */
 
 /* lunch section starts here  */
@@ -528,7 +687,7 @@ body {
   color: white;
   margin-bottom: -3%;
   text-align: left;
-  font-size: 25vh;
+  font-size: 100px;
   padding-top: 14%;
   text-decoration: overline;
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -538,23 +697,17 @@ body {
 
 #pic1 {
   height: 45vh;
-  box-shadow: 3px 3px 2px 0.5px #331a00;
-  ;
-  margin-left: 18vh;
+
 }
 
 #pic2 {
   height: 45vh;
-  box-shadow: 3px 3px 2px 0.5px #331a00;
-  ;
-  margin-left: 18vh;
+
 }
 
 #pic3 {
   height: 45vh;
-  box-shadow: 3px 3px 2px 0.5px #331a00;
-  ;
-  margin-left: 18vh;
+
 }
 
 .row {
@@ -658,38 +811,19 @@ body {
   margin-top: -5vh;
 }
 
-#break {
-  text-align: center;
-  color: white;
-  margin-bottom: -3%;
-  text-align: left;
-  font-size: 25vh;
-  padding-top: 14%;
-  text-decoration: overline;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-family: 'Berkshire Swash', cursive;
-  text-align: center;
-}
-
 #pic1 {
   height: 45vh;
-  box-shadow: 3px 3px 2px 0.5px #331a00;
-  ;
-  margin-left: 18vh;
+
 }
 
 #pic2 {
   height: 45vh;
-  box-shadow: 3px 3px 2px 0.5px #331a00;
-  ;
-  margin-left: 18vh;
+
 }
 
 #pic3 {
   height: 45vh;
-  box-shadow: 3px 3px 2px 0.5px #331a00;
-  ;
-  margin-left: 18vh;
+
 }
 
 .row {
@@ -778,3 +912,41 @@ body {
 }
 
 /* dinner section ends here */
+/* media queries */
+@media screen and (max-width: 1600px) {
+  .imgFrame{
+   margin-left: 40px;
+  height: 50%;
+  margin-top: -10px;
+  }
+  #imgs{
+    margin-left: 180px;
+  }
+  .recipe-link  img{
+    width: 50%;
+    height: 50%;
+    margin-left: 30px;
+  }
+  .box-shaped{
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .btn-plan{
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #head {
+    width: 50%;
+  }
+  .recipe-link{
+    width: 50%;
+    height:70vh
+  }
+}
+
+
+
+#googlemap{
+  margin-left: 80px;
+}
